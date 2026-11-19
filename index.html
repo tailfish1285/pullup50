@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwNDE2NDA3NTA3NzY1NTg4NzU4MiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzEyOTMzZDIxZjZmMzBhYzFfaW5kZXguaHRtbC0yNjkifSwiZXhwIjoxNzk1MDM3MTA2LCJpYXQiOjE3OTUwMzM1MDYsImFsZyI6IlJTMjU2In0.B9Cs43exJYAGBhaf-r63Oyo4zGa-fiKKd0pCKNpvih9Stcm5_WbIQLuqLDLpgdiQwJ2ggO0RP_LU1lZmt3LWyTmsGV50Qdy5iu_jBhiwequJlJ8kLiok3irJTad2LaMjmKJNF6pnKa5gZT6MnN0-oa4lg1muvdhKpj2d3lgWBi0meRRTAsdEsRvPDusPKROGqCUeIApmJqx4pdNcZEgEE9ImphbdD03SbInqbOlzWhxwKwycjHZcbLNU9-loPt6ddUd3zMp8cYY7O8pF3DOLMJU3zOOrePgfYftMHGXZ6QDnbuo0qW93gC3aJw4dzwT0LjXQzov92KTC5jD70FBjwQ","c_12933d21f6f30ac1_index.html-269")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  
+  <!-- iOS Web App (PWA) Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="턱걸이 50">
+  <meta name="theme-color" content="#0b101d">
+  
+  <title>턱걸이 50 챌린지</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Pretendard / Inter Font -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <style>
+    :root {
+      --bg-main: #0b101d;
+      --bg-card: #131b2e;
+      --bg-card-inner: #192339;
+      --border-color: #22304d;
+      --accent-mint: #14b8a6;
+      --accent-emerald: #10b981;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background-color: var(--bg-main);
+      color: #f8fafc;
+      margin: 0;
+      padding: 0;
+      /* iPhone Safe Area Support */
+      padding-top: env(safe-area-inset-top, 16px);
+      padding-bottom: env(safe-area-inset-bottom, 24px);
+      padding-left: env(safe-area-inset-left, 0px);
+      padding-right: env(safe-area-inset-right, 0px);
+      overflow-x: hidden;
+      user-select: none;
+    }
+
+    input, textarea {
+      user-select: text;
+      -webkit-user-select: text;
+    }
+
+    /* Prevent double-tap zoom on iPhone buttons */
+    button {
+      touch-action: manipulation;
+    }
+
+    /* Tactile iOS Button Press Effect */
+    .btn-press {
+      transition: transform 0.12s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.12s ease;
+    }
+    .btn-press:active {
+      transform: scale(0.93);
+      filter: brightness(1.12);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b101d;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #283654;
+      border-radius: 9999px;
+    }
+
+    /* Number Counter Pop Animation */
+    @keyframes counterPop {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.16); color: #2dd4bf; }
+      100% { transform: scale(1); }
+    }
+    .animate-pop {
+      animation: counterPop 0.25s ease-out;
+    }
+
+    /* Emerald Glow for +10 Button & App Icon */
+    .emerald-glow {
+      box-shadow: 0 8px 22px -4px rgba(20, 184, 166, 0.45);
+    }
+    
+    .progress-glow {
+      box-shadow: 0 0 12px rgba(20, 184, 166, 0.7);
+    }
+
+    /* Confetti Canvas Overlay */
+    #confetti-canvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 100;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.relative{position:relative}.inset-0{inset:0px}.bottom-6{bottom:1.5rem}.left-1\/2{left:50%}.z-50{z-index:50}.mx-0\.5{margin-left:0.125rem;margin-right:0.125rem}.mb-1\.5{margin-bottom:0.375rem}.ml-2{margin-left:0.5rem}.mt-0\.5{margin-top:0.125rem}.ml-0\.5{margin-left:0.125rem}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-11{height:2.75rem}.h-12{height:3rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-24{height:6rem}.h-3\.5{height:0.875rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-full{height:100%}.min-h-\[38px\]{min-height:38px}.min-h-screen{min-height:100vh}.w-11{width:2.75rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.min-w-0{min-width:0px}.max-w-\[430px\]{max-width:430px}.max-w-sm{max-width:24rem}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}.cursor-pointer{cursor:pointer}.resize-none{resize:none}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.grid-cols-7{grid-template-columns:repeat(7, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-start{justify-content:flex-start}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-\[20px\]{border-radius:20px}.rounded-\[26px\]{border-radius:26px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-\[\#14b8a6\]\/30{border-color:rgb(20 184 166 / 0.3)}.border-\[\#1a5656\]{--tw-border-opacity:1;border-color:rgb(26 86 86 / var(--tw-border-opacity, 1))}.border-\[\#1f2c47\]{--tw-border-opacity:1;border-color:rgb(31 44 71 / var(--tw-border-opacity, 1))}.border-\[\#22304d\]{--tw-border-opacity:1;border-color:rgb(34 48 77 / var(--tw-border-opacity, 1))}.border-\[\#233252\]{--tw-border-opacity:1;border-color:rgb(35 50 82 / var(--tw-border-opacity, 1))}.border-\[\#253350\]{--tw-border-opacity:1;border-color:rgb(37 51 80 / var(--tw-border-opacity, 1))}.border-\[\#263554\]{--tw-border-opacity:1;border-color:rgb(38 53 84 / var(--tw-border-opacity, 1))}.border-\[\#28395c\]{--tw-border-opacity:1;border-color:rgb(40 57 92 / var(--tw-border-opacity, 1))}.border-\[\#293858\]{--tw-border-opacity:1;border-color:rgb(41 56 88 / var(--tw-border-opacity, 1))}.border-\[\#2a3b60\]{--tw-border-opacity:1;border-color:rgb(42 59 96 / var(--tw-border-opacity, 1))}.border-\[\#2a3c63\]{--tw-border-opacity:1;border-color:rgb(42 60 99 / var(--tw-border-opacity, 1))}.border-\[\#2c3c5e\]{--tw-border-opacity:1;border-color:rgb(44 60 94 / var(--tw-border-opacity, 1))}.border-\[\#2c3e66\]{--tw-border-opacity:1;border-color:rgb(44 62 102 / var(--tw-border-opacity, 1))}.border-\[\#2dd4bf\]\/50{border-color:rgb(45 212 191 / 0.5)}.border-\[\#314673\]{--tw-border-opacity:1;border-color:rgb(49 70 115 / var(--tw-border-opacity, 1))}.border-\[\#5e2948\]{--tw-border-opacity:1;border-color:rgb(94 41 72 / var(--tw-border-opacity, 1))}.border-\[\#5eead4\]\/50{border-color:rgb(94 234 212 / 0.5)}.border-teal-300\/30{border-color:rgb(94 234 212 / 0.3)}.border-\[\#2d4068\]{--tw-border-opacity:1;border-color:rgb(45 64 104 / var(--tw-border-opacity, 1))}.border-\[\#2e4a78\]{--tw-border-opacity:1;border-color:rgb(46 74 120 / var(--tw-border-opacity, 1))}.border-\[\#14b8a6\]\/50{border-color:rgb(20 184 166 / 0.5)}.border-\[\#14b8a6\]\/60{border-color:rgb(20 184 166 / 0.6)}.bg-\[\#101728\]{--tw-bg-opacity:1;background-color:rgb(16 23 40 / var(--tw-bg-opacity, 1))}.bg-\[\#113537\]{--tw-bg-opacity:1;background-color:rgb(17 53 55 / var(--tw-bg-opacity, 1))}.bg-\[\#113837\]{--tw-bg-opacity:1;background-color:rgb(17 56 55 / var(--tw-bg-opacity, 1))}.bg-\[\#131b2e\]{--tw-bg-opacity:1;background-color:rgb(19 27 46 / var(--tw-bg-opacity, 1))}.bg-\[\#14b8a6\]{--tw-bg-opacity:1;background-color:rgb(20 184 166 / var(--tw-bg-opacity, 1))}.bg-\[\#151f35\]{--tw-bg-opacity:1;background-color:rgb(21 31 53 / var(--tw-bg-opacity, 1))}.bg-\[\#182238\]{--tw-bg-opacity:1;background-color:rgb(24 34 56 / var(--tw-bg-opacity, 1))}.bg-\[\#1a243a\]{--tw-bg-opacity:1;background-color:rgb(26 36 58 / var(--tw-bg-opacity, 1))}.bg-\[\#1a253d\]{--tw-bg-opacity:1;background-color:rgb(26 37 61 / var(--tw-bg-opacity, 1))}.bg-\[\#1a2844\]{--tw-bg-opacity:1;background-color:rgb(26 40 68 / var(--tw-bg-opacity, 1))}.bg-\[\#1b253b\]{--tw-bg-opacity:1;background-color:rgb(27 37 59 / var(--tw-bg-opacity, 1))}.bg-\[\#1b2742\]{--tw-bg-opacity:1;background-color:rgb(27 39 66 / var(--tw-bg-opacity, 1))}.bg-\[\#1d2842\]{--tw-bg-opacity:1;background-color:rgb(29 40 66 / var(--tw-bg-opacity, 1))}.bg-\[\#1d2b49\]{--tw-bg-opacity:1;background-color:rgb(29 43 73 / var(--tw-bg-opacity, 1))}.bg-\[\#1e2c4a\]{--tw-bg-opacity:1;background-color:rgb(30 44 74 / var(--tw-bg-opacity, 1))}.bg-\[\#22304f\]{--tw-bg-opacity:1;background-color:rgb(34 48 79 / var(--tw-bg-opacity, 1))}.bg-\[\#2dd4bf\]{--tw-bg-opacity:1;background-color:rgb(45 212 191 / var(--tw-bg-opacity, 1))}.bg-\[\#321b2c\]{--tw-bg-opacity:1;background-color:rgb(50 27 44 / var(--tw-bg-opacity, 1))}.bg-black\/75{background-color:rgb(0 0 0 / 0.75)}.bg-teal-500\/50{background-color:rgb(20 184 166 / 0.5)}.bg-\[\#192339\]{--tw-bg-opacity:1;background-color:rgb(25 35 57 / var(--tw-bg-opacity, 1))}.bg-\[\#1a2b46\]{--tw-bg-opacity:1;background-color:rgb(26 43 70 / var(--tw-bg-opacity, 1))}.bg-\[\#1b2740\]{--tw-bg-opacity:1;background-color:rgb(27 39 64 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-\[\#14b8a6\]{--tw-gradient-from:#14b8a6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(20 184 166 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#2dd4bf\]{--tw-gradient-from:#2dd4bf var(--tw-gradient-from-position);--tw-gradient-to:rgb(45 212 191 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-\[\#0d9488\]{--tw-gradient-to:#0d9488 var(--tw-gradient-to-position)}.to-\[\#10b981\]{--tw-gradient-to:#10b981 var(--tw-gradient-to-position)}.to-\[\#34d399\]{--tw-gradient-to:#34d399 var(--tw-gradient-to-position)}.p-0\.5{padding:0.125rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.pb-12{padding-bottom:3rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[11\.5px\]{font-size:11.5px}.text-\[11px\]{font-size:11px}.text-\[12\.5px\]{font-size:12.5px}.text-\[15\.5px\]{font-size:15.5px}.text-\[20px\]{font-size:20px}.text-\[68px\]{font-size:68px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[10px\]{font-size:10px}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.text-\[\#2dd4bf\]{--tw-text-opacity:1;color:rgb(45 212 191 / var(--tw-text-opacity, 1))}.text-\[\#5eead4\]{--tw-text-opacity:1;color:rgb(94 234 212 / var(--tw-text-opacity, 1))}.text-\[\#fb7185\]{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-teal-200{--tw-text-opacity:1;color:rgb(153 246 228 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.placeholder-slate-500::placeholder{--tw-placeholder-opacity:1;color:rgb(100 116 139 / var(--tw-placeholder-opacity, 1))}.opacity-0{opacity:0}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-\[\#2dd4bf\]{--tw-ring-opacity:1;--tw-ring-color:rgb(45 212 191 / var(--tw-ring-opacity, 1))}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.hover\:bg-\[\#222f4b\]:hover{--tw-bg-opacity:1;background-color:rgb(34 47 75 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#25375c\]:hover{--tw-bg-opacity:1;background-color:rgb(37 55 92 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#273556\]:hover{--tw-bg-opacity:1;background-color:rgb(39 53 86 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#422239\]:hover{--tw-bg-opacity:1;background-color:rgb(66 34 57 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#28385c\]:hover{--tw-bg-opacity:1;background-color:rgb(40 56 92 / var(--tw-bg-opacity, 1))}.hover\:text-slate-200:hover{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.hover\:text-rose-400:hover{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.focus\:border-\[\#2dd4bf\]:focus{--tw-border-opacity:1;border-color:rgb(45 212 191 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}</style></head>
+<body class="min-h-screen flex flex-col items-center justify-start">
+
+  <!-- Confetti Canvas for 50 Goal Celebration -->
+  <canvas id="confetti-canvas" width="382" height="699"></canvas>
+
+  <!-- Main App Container (iPhone Width Centered) -->
+  <main class="w-full max-w-[430px] px-4 pt-3 pb-12 space-y-3.5">
+
+    <!-- 1. HEADER -->
+    <header class="flex items-center justify-between gap-2 pt-1">
+      <div class="flex items-center gap-3 min-w-0">
+        <!-- App Icon -->
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#2dd4bf] to-[#0d9488] flex items-center justify-center text-2xl shrink-0 emerald-glow border border-teal-300/30">
+          💪
+        </div>
+        <!-- Title & Today Subtitle -->
+        <div class="min-w-0">
+          <h1 class="text-[20px] font-extrabold tracking-tight text-white leading-tight truncate">
+            턱걸이 50 챌린지
+          </h1>
+          <p id="header-today-text" class="text-[12.5px] text-slate-400 font-medium mt-0.5 leading-snug">오늘: 2026. 11. 19 (목) · 목표 50개</p>
+        </div>
+      </div>
+
+      <!-- Right Action Buttons -->
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="openModal('install-modal')" class="btn-press bg-[#1a243a] hover:bg-[#222f4b] border border-[#2c3c5e] rounded-2xl px-3 py-2 flex items-center gap-1.5 text-xs font-bold text-slate-100 shadow-sm">
+          <i class="fa-brands fa-apple text-[#2dd4bf] text-base"></i>
+          <span class="leading-tight text-center">앱 설치<br>법</span>
+        </button>
+        <button onclick="openModal('backup-modal')" aria-label="데이터 백업 및 설정" class="btn-press w-11 h-11 bg-[#1a243a] hover:bg-[#222f4b] border border-[#2c3c5e] rounded-2xl flex items-center justify-center text-slate-200 shadow-sm">
+          <i class="fa-solid fa-cloud-arrow-up text-base"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- 2. TOP 3 SUMMARY STAT CARDS -->
+    <section class="grid grid-cols-3 gap-2.5">
+      <!-- Card 1: Stickers -->
+      <div onclick="scrollToCalendar()" class="btn-press cursor-pointer bg-[#131b2e] border border-[#22304d] rounded-[20px] py-3.5 px-2 flex flex-col items-center justify-center text-center shadow-md">
+        <span class="text-[11.5px] text-slate-400 font-semibold mb-1.5">모은 완수 스티커</span>
+        <div class="flex items-center gap-1">
+          <span class="text-lg">🎖️</span>
+          <span id="stat-stickers" class="text-xl font-extrabold text-amber-400">1</span>
+          <span class="text-xs text-slate-300 font-semibold">장</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Current Streak -->
+      <div class="bg-[#131b2e] border border-[#22304d] rounded-[20px] py-3.5 px-2 flex flex-col items-center justify-center text-center shadow-md">
+        <span class="text-[11.5px] text-slate-400 font-semibold mb-1.5">현재 연속 달성</span>
+        <div class="flex items-center gap-1">
+          <span class="text-lg">🔥</span>
+          <span id="stat-streak" class="text-xl font-extrabold text-orange-400">1</span>
+          <span class="text-xs text-slate-300 font-semibold">일째</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Total Cumulative Pull-ups -->
+      <div class="bg-[#131b2e] border border-[#22304d] rounded-[20px] py-3.5 px-2 flex flex-col items-center justify-center text-center shadow-md">
+        <span class="text-[11.5px] text-slate-400 font-semibold mb-1.5">누적 턱걸이</span>
+        <div class="flex items-center gap-1">
+          <span id="stat-total" class="text-xl font-extrabold text-[#2dd4bf]">79</span>
+          <span class="text-xs text-slate-300 font-semibold">개</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DATE NAVIGATOR BAR -->
+    <section class="bg-[#131b2e] border border-[#22304d] rounded-[20px] p-2.5 flex items-center justify-between shadow-md">
+      <button onclick="changeDate(-1)" aria-label="이전 날짜" class="btn-press w-9 h-9 rounded-xl bg-[#1d2842] hover:bg-[#273556] flex items-center justify-center text-slate-300">
+        <i class="fa-solid fa-chevron-left text-xs"></i>
+      </button>
+
+      <button onclick="goToToday()" class="btn-press flex items-center gap-2 px-3 py-1 rounded-xl">
+        <span id="today-badge" class="bg-[#113837] text-[#2dd4bf] border border-[#14b8a6]/30 text-[11px] font-bold px-2 py-0.5 rounded-md">
+          오늘
+        </span>
+        <span id="selected-date-text" class="text-[15.5px] font-extrabold text-white tracking-tight">2026. 11. 19 (목)</span>
+      </button>
+
+      <button onclick="changeDate(1)" aria-label="다음 날짜" class="btn-press w-9 h-9 rounded-xl bg-[#1d2842] hover:bg-[#273556] flex items-center justify-center text-slate-300">
+        <i class="fa-solid fa-chevron-right text-xs"></i>
+      </button>
+    </section>
+
+    <!-- 4. MAIN WORKOUT TRACKER CARD -->
+    <section class="bg-[#131b2e] border border-[#22304d] rounded-[26px] p-5 shadow-xl space-y-5">
+      
+      <!-- Top Remaining / Goal Status Pill -->
+      <div class="flex items-center justify-between">
+        <div id="goal-status-pill" class="inline-flex items-center gap-2 bg-[#113837] border border-[#14b8a6]/50 rounded-full px-3.5 py-1.5">
+          <span id="goal-status-dot" class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping inline-block"></span>
+          <span id="goal-status-text" class="text-xs font-bold text-slate-200">🎖️ <strong class="text-[#2dd4bf]">50개 목표 달성!</strong> (+29개 초과)</span>
+        </div>
+
+        <!-- Optional Audio/Haptic Toggle -->
+        <button onclick="toggleSound()" id="sound-toggle-btn" class="btn-press text-xs text-slate-400 hover:text-slate-200 bg-[#1a253d] px-2.5 py-1.5 rounded-full border border-[#28395c] flex items-center gap-1" title="효과음 켜기/끄기">
+          <i id="sound-icon" class="fa-solid fa-volume-high text-[#2dd4bf]"></i>
+        </button>
+      </div>
+
+      <!-- Giant Rep Counter -->
+      <div class="text-center py-2">
+        <div class="inline-flex items-baseline justify-center">
+          <span id="current-reps-display" class="text-[68px] font-black text-white leading-none tracking-tight animate-pop">79</span>
+          <span class="text-2xl font-extrabold text-slate-400 ml-2">/ 50개</span>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="w-full h-3.5 bg-[#1b253b] border border-[#253350] rounded-full p-0.5 overflow-hidden">
+        <div id="progress-bar-fill" class="h-full bg-gradient-to-r from-[#14b8a6] to-[#34d399] rounded-full transition-all duration-300 ease-out progress-glow" style="width: 100%;"></div>
+      </div>
+
+      <!-- Action Header Row: Guide & Subtract 1 Button -->
+      <div class="flex items-center justify-between pt-1">
+        <div class="flex items-center gap-1.5 text-xs font-bold text-slate-300">
+          <span>👆</span>
+          <span>버튼을 눌러 개수 추가</span>
+        </div>
+
+        <button onclick="subtractOneRep()" class="btn-press bg-[#321b2c] hover:bg-[#422239] border border-[#5e2948] text-[#fb7185] text-xs font-bold px-3.5 py-1.5 rounded-full transition">
+          - 1개 빼기 (실수 정정)
+        </button>
+      </div>
+
+      <!-- 4 Quick-Add Set Buttons Grid -->
+      <div class="grid grid-cols-4 gap-2.5">
+        <!-- +1 Button -->
+        <button onclick="addReps(1)" class="btn-press h-24 rounded-[20px] bg-[#1a243a] border border-[#293858] flex flex-col items-center justify-center gap-1.5 shadow-md">
+          <span class="text-2xl font-black text-white">+1</span>
+          <span class="text-[11.5px] font-semibold text-slate-400">한 개씩</span>
+        </button>
+
+        <!-- +3 Button -->
+        <button onclick="addReps(3)" class="btn-press h-24 rounded-[20px] bg-[#1a243a] border border-[#293858] flex flex-col items-center justify-center gap-1.5 shadow-md">
+          <span class="text-2xl font-black text-[#2dd4bf]">+3</span>
+          <span class="text-[11.5px] font-semibold text-slate-400">가볍게</span>
+        </button>
+
+        <!-- +5 Button -->
+        <button onclick="addReps(5)" class="btn-press h-24 rounded-[20px] bg-[#113537] border border-[#1a5656] flex flex-col items-center justify-center gap-1.5 shadow-md">
+          <span class="text-2xl font-black text-[#5eead4]">+5</span>
+          <span class="text-[11.5px] font-semibold text-[#2dd4bf]">기본 세트</span>
+        </button>
+
+        <!-- +10 Button -->
+        <button onclick="addReps(10)" class="btn-press h-24 rounded-[20px] bg-gradient-to-b from-[#2dd4bf] to-[#10b981] border border-[#5eead4]/50 flex flex-col items-center justify-center gap-1.5 emerald-glow">
+          <span class="text-2xl font-black text-slate-950">+10</span>
+          <span class="text-[11.5px] font-extrabold text-slate-900">불꽃 세트</span>
+        </button>
+      </div>
+
+      <hr class="border-[#1f2c47]">
+
+      <!-- Recent Sets Log Section -->
+      <div class="space-y-2.5">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xs font-bold text-slate-300">방금 한 세트 기록</h2>
+          <span id="sets-count-label" class="text-[11px] text-slate-400 font-medium">총 16세트</span>
+        </div>
+
+        <div id="sets-log-container" class="min-h-[38px] flex flex-wrap items-center gap-2">
+          <button onclick="removeSetById(1795033512097.1484)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">1세트</span>
+            <span class="text-[#2dd4bf]">+5개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033512551.3198)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">2세트</span>
+            <span class="text-[#2dd4bf]">+5개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033513226.6663)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">3세트</span>
+            <span class="text-[#2dd4bf]">+3개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033513458.2937)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">4세트</span>
+            <span class="text-[#2dd4bf]">+3개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033514128.395)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">5세트</span>
+            <span class="text-[#2dd4bf]">+1개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033514959.0708)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">6세트</span>
+            <span class="text-[#2dd4bf]">+10개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033515909.3745)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">7세트</span>
+            <span class="text-[#2dd4bf]">+5개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033516125.8608)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">8세트</span>
+            <span class="text-[#2dd4bf]">+5개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033517294.2822)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">9세트</span>
+            <span class="text-[#2dd4bf]">+1개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033517726.8203)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">10세트</span>
+            <span class="text-[#2dd4bf]">+3개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033518192.5784)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">11세트</span>
+            <span class="text-[#2dd4bf]">+5개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033518644.507)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">12세트</span>
+            <span class="text-[#2dd4bf]">+10개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033520096.295)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">13세트</span>
+            <span class="text-[#2dd4bf]">+10개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033521327.0903)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">14세트</span>
+            <span class="text-[#2dd4bf]">+5개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033521526.0308)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">15세트</span>
+            <span class="text-[#2dd4bf]">+5개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        
+          <button onclick="removeSetById(1795033521892.6792)" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">16세트</span>
+            <span class="text-[#2dd4bf]">+3개</span>
+            <span class="text-[10px] text-slate-500">05:25</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Daily Workout Memo (Auto-saved) -->
+      <div class="space-y-2 pt-1">
+        <div class="flex items-center justify-between">
+          <label for="daily-memo" class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+            <span>📝</span>
+            <span>오늘의 운동 메모 (자동 저장)</span>
+          </label>
+          <span id="memo-save-indicator" class="text-[11px] text-[#2dd4bf] font-semibold opacity-0 transition-opacity duration-300">
+            ✓ 저장됨
+          </span>
+        </div>
+        <textarea id="daily-memo" rows="2" placeholder="그립 종류(오버/언더), 밴드 사용 여부, 오늘 컨디션 등을 자유롭게 기록하세요." class="w-full rounded-2xl bg-[#182238] border border-[#263554] focus:border-[#2dd4bf] focus:outline-none p-3 text-xs text-slate-100 placeholder-slate-500 resize-none transition"></textarea>
+      </div>
+    </section>
+
+    <!-- 5. MONTHLY STICKER CALENDAR CARD -->
+    <section id="calendar-section" class="bg-[#131b2e] border border-[#22304d] rounded-[26px] p-5 shadow-xl space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="text-base">🗓️</span>
+          <h2 class="text-sm font-extrabold text-white">월간 완수 스티커 북</h2>
+        </div>
+
+        <!-- Month Switcher -->
+        <div class="flex items-center gap-1.5">
+          <button onclick="changeCalendarMonth(-1)" class="btn-press w-7 h-7 rounded-lg bg-[#1d2842] flex items-center justify-center text-slate-300 text-xs">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <span id="calendar-month-title" class="text-xs font-bold text-slate-200 px-1.5">2026년 11월</span>
+          <button onclick="changeCalendarMonth(1)" class="btn-press w-7 h-7 rounded-lg bg-[#1d2842] flex items-center justify-center text-slate-300 text-xs">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Weekday Headers -->
+      <div class="grid grid-cols-7 text-center text-[11px] font-bold text-slate-400">
+        <span class="text-rose-400">일</span>
+        <span>월</span>
+        <span>화</span>
+        <span>수</span>
+        <span>목</span>
+        <span>금</span>
+        <span class="text-sky-400">토</span>
+      </div>
+
+      <!-- Days Grid -->
+      <div id="calendar-grid" class="grid grid-cols-7 gap-1.5 text-center">
+          <button onclick="selectDateFromCalendar('2026-11-01')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">1</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-02')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">2</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-03')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">3</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-04')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">4</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-05')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">5</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-06')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">6</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-07')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">7</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-08')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">8</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-09')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">9</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-10')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">10</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-11')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">11</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-12')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">12</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-13')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">13</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-14')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">14</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-15')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">15</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-16')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">16</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-17')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">17</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-18')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">18</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-19')" class="btn-press h-12 rounded-xl border bg-[#113537] border-[#14b8a6]/60 text-white ring-2 ring-[#2dd4bf] flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold text-[#2dd4bf] underline">19</span>
+            <span class="text-xs leading-none mt-0.5">
+              🎖️
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-20')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">20</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-21')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">21</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-22')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">22</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-23')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">23</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-24')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">24</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-25')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">25</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-26')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">26</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-27')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">27</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-28')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">28</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-29')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">29</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        
+          <button onclick="selectDateFromCalendar('2026-11-30')" class="btn-press h-12 rounded-xl border bg-[#192339] border-[#233252] text-slate-300 flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ">30</span>
+            <span class="text-xs leading-none mt-0.5">
+              <span class="text-[10px] text-slate-600">·</span>
+            </span>
+          </button>
+        </div>
+
+      <div class="flex items-center justify-between text-[11px] text-slate-400 pt-1 border-t border-[#1f2c47]">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1"><span class="text-xs">🎖️</span> 50개 완수</span>
+          <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-teal-500/50 inline-block"></span> 진행 중</span>
+        </div>
+        <span id="month-summary-text" class="font-bold text-amber-400">이번 달 스티커 1장</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- MODAL 1: iPhone App Installation Guide     -->
+  <!-- ========================================== -->
+  <div id="install-modal" class="fixed inset-0 z-50 items-center justify-center bg-black/75 backdrop-blur-sm p-4 flex">
+    <div class="w-full max-w-sm bg-[#151f35] border border-[#2a3b60] rounded-[26px] p-5 shadow-2xl space-y-4 animate-fadeIn">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fa-brands fa-apple text-xl text-[#2dd4bf]"></i>
+          <h3 class="text-base font-extrabold text-white">아이폰 앱으로 설치하는 법</h3>
+        </div>
+        <button onclick="closeModal('install-modal')" class="w-8 h-8 rounded-full bg-[#1e2c4a] text-slate-300 flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <p class="text-xs text-slate-300 leading-relaxed">
+        이 웹앱은 <strong>iOS 홈 화면 추가(PWA)</strong> 기능을 지원하여, 아이폰에서 주소창 없이 진짜 네이티브 앱처럼 전체 화면으로 작동합니다.
+      </p>
+
+      <div class="space-y-2.5 text-xs">
+        <div class="bg-[#1b2742] border border-[#2a3c63] rounded-2xl p-3 flex items-start gap-3">
+          <span class="w-6 h-6 rounded-full bg-[#14b8a6] text-slate-950 font-black flex items-center justify-center shrink-0">1</span>
+          <div>
+            <p class="font-bold text-white">단일 HTML 파일 저장 또는 Safari로 열기</p>
+            <p class="text-slate-400 mt-0.5">아래 버튼을 눌러 파일을 아이폰에 저장한 뒤 <strong>Safari</strong> 또는 <strong>파일 앱</strong>에서 엽니다.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#1b2742] border border-[#2a3c63] rounded-2xl p-3 flex items-start gap-3">
+          <span class="w-6 h-6 rounded-full bg-[#14b8a6] text-slate-950 font-black flex items-center justify-center shrink-0">2</span>
+          <div>
+            <p class="font-bold text-white">하단 공유 버튼 <i class="fa-solid fa-arrow-up-from-bracket text-[#2dd4bf] mx-0.5"></i> 탭하기</p>
+            <p class="text-slate-400 mt-0.5">Safari 하단 중앙의 공유 아이콘을 누릅니다.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#1b2742] border border-[#2a3c63] rounded-2xl p-3 flex items-start gap-3">
+          <span class="w-6 h-6 rounded-full bg-[#14b8a6] text-slate-950 font-black flex items-center justify-center shrink-0">3</span>
+          <div>
+            <p class="font-bold text-white">'홈 화면에 추가' 선택</p>
+            <p class="text-slate-400 mt-0.5">메뉴에서 <strong>[홈 화면에 추가 ➕]</strong>를 누르면 아이폰 바탕화면에 <strong>턱걸이 50</strong> 앱 아이콘이 생성됩니다!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-1 space-y-2">
+        <button onclick="downloadStandaloneHTML()" class="btn-press w-full py-3 rounded-2xl bg-gradient-to-r from-[#2dd4bf] to-[#10b981] text-slate-950 font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg">
+          <i class="fa-solid fa-download"></i>
+          <span>아이폰용 단일 앱 파일(.html) 다운로드</span>
+        </button>
+        <button onclick="closeModal('install-modal')" class="btn-press w-full py-2.5 rounded-2xl bg-[#22304f] text-slate-200 font-bold text-xs">
+          닫기
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL 2: Cloud Backup / Restore / Reset    -->
+  <!-- ========================================== -->
+  <div id="backup-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4">
+    <div class="w-full max-w-sm bg-[#151f35] border border-[#2a3b60] rounded-[26px] p-5 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-cloud-arrow-up text-lg text-[#2dd4bf]"></i>
+          <h3 class="text-base font-extrabold text-white">데이터 백업 및 관리</h3>
+        </div>
+        <button onclick="closeModal('backup-modal')" class="w-8 h-8 rounded-full bg-[#1e2c4a] text-slate-300 flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <p class="text-xs text-slate-300 leading-relaxed">
+        모든 운동 기록은 아이폰 기기 내부에 <strong>자동 저장</strong>됩니다. 기기를 변경하거나 데이터를 보관하려면 백업 코드를 복사해 두세요.
+      </p>
+
+      <div class="space-y-2">
+        <button onclick="exportBackupData()" class="btn-press w-full py-3 rounded-2xl bg-[#1d2b49] hover:bg-[#25375c] border border-[#314673] text-white font-bold text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-copy text-[#2dd4bf]"></i>
+          <span>전체 기록 백업 코드 복사하기</span>
+        </button>
+
+        <button onclick="toggleImportArea()" class="btn-press w-full py-3 rounded-2xl bg-[#1d2b49] hover:bg-[#25375c] border border-[#314673] text-white font-bold text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-file-import text-amber-400"></i>
+          <span>백업 코드로 기록 복원하기</span>
+        </button>
+
+        <!-- Hidden Import Box -->
+        <div id="import-box" class="hidden space-y-2 pt-2">
+          <textarea id="import-json-input" rows="3" placeholder="복사해둔 백업 JSON 코드를 여기에 붙여넣으세요." class="w-full rounded-xl bg-[#101728] border border-[#2c3e66] p-2.5 text-xs text-slate-200 focus:outline-none"></textarea>
+          <button onclick="importBackupData()" class="btn-press w-full py-2.5 rounded-xl bg-[#14b8a6] text-slate-950 font-extrabold text-xs">
+            데이터 복원 적용
+          </button>
+        </div>
+      </div>
+
+      <hr class="border-[#233252]">
+
+      <!-- Reset Current Day -->
+      <div class="flex items-center justify-between">
+        <span class="text-xs text-slate-400">선택한 날짜 기록 초기화</span>
+        <button onclick="resetSelectedDay()" class="btn-press bg-[#321b2c] border border-[#5e2948] text-[#fb7185] text-xs font-bold px-3 py-1.5 rounded-xl">
+          오늘 기록 0으로 리셋
+        </button>
+      </div>
+
+      <div id="backup-toast" class="hidden text-center text-xs font-bold text-[#2dd4bf] bg-[#113537] py-2 rounded-xl"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-msg" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-300 bg-[#1a2844] border border-[#2dd4bf]/50 text-white px-4 py-2.5 rounded-full shadow-2xl text-xs font-bold flex items-center gap-2" style="opacity: 0; transform: translate(-50%, 0px);">
+    <span id="toast-icon">📲</span>
+    <span id="toast-text">파일 다운로드 완료! Safari에서 열어 홈 화면에 추가하세요.</span>
+  </div>
+
+  <script>
+    /*************************************************************
+     * STATE & STORAGE MANAGEMENT
+     *************************************************************/
+    const STORAGE_KEY = 'PULLUPS_50_CHALLENGE_DATA_V1';
+    const GOAL_REPS = 50;
+    const WEEKDAYS_KO = ['일', '월', '화', '수', '목', '금', '토'];
+
+    // Format Date object to 'YYYY-MM-DD'
+    function toDateKey(dateObj) {
+      const y = dateObj.getFullYear();
+      const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+      const d = String(dateObj.getDate()).padStart(2, '0');
+      return `${y}-${m}-${d}`;
+    }
+
+    // Format Date key 'YYYY-MM-DD' to 'YYYY. MM. DD (요일)'
+    function formatDisplayDate(dateKey) {
+      const [y, m, d] = dateKey.split('-').map(Number);
+      const dateObj = new Date(y, m - 1, d);
+      const dayName = WEEKDAYS_KO[dateObj.getDay()];
+      return `${y}. ${String(m).padStart(2, '0')}. ${String(d).padStart(2, '0')} (${dayName})`;
+    }
+
+    // App State
+    let todayKey = toDateKey(new Date());
+    let selectedDateKey = todayKey;
+    let calendarYear = new Date().getFullYear();
+    let calendarMonth = new Date().getMonth(); // 0-indexed
+    let soundEnabled = true;
+    let db = {
+      days: {} // { '2026-11-06': { reps: 0, sets: [{id, count, time}], memo: '' } }
+    };
+
+    // Load from LocalStorage
+    function loadData() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed.days === 'object') {
+            db = parsed;
+          }
+        }
+      } catch (e) {
+        console.warn('LocalStorage 읽기 오류:', e);
+      }
+    }
+
+    // Save to LocalStorage
+    function saveData() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
+      } catch (e) {
+        console.warn('LocalStorage 저장 오류:', e);
+      }
+    }
+
+    // Ensure day object exists
+    function getDayData(dateKey) {
+      if (!db.days[dateKey]) {
+        db.days[dateKey] = {
+          reps: 0,
+          sets: [],
+          memo: ''
+        };
+      }
+      return db.days[dateKey];
+    }
+
+    /*************************************************************
+     * WEB AUDIO SYNTHESIZER (No external audio files needed)
+     *************************************************************/
+    let audioCtx = null;
+    function playSound(type) {
+      if (!soundEnabled) return;
+      try {
+        if (!audioCtx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          audioCtx = new AudioContext();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        const now = audioCtx.currentTime;
+
+        if (type === 'add') {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(520, now);
+          osc.frequency.exponentialRampToValueAtTime(780, now + 0.09);
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now);
+          osc.stop(now + 0.1);
+        } else if (type === 'sub') {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(360, now);
+          osc.frequency.exponentialRampToValueAtTime(220, now + 0.1);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.11);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now);
+          osc.stop(now + 0.11);
+        } else if (type === 'goal') {
+          // Victory Fanfare Chord
+          const notes = [523.25, 659.25, 783.99, 1046.5];
+          notes.forEach((freq, idx) => {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+            gain.gain.setValueAtTime(0.15, now + idx * 0.08);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.45);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now + idx * 0.08);
+            osc.stop(now + idx * 0.08 + 0.46);
+          });
+        }
+      } catch (e) {
+        // Ignore audio errors on restricted devices
+      }
+    }
+
+    function toggleSound() {
+      soundEnabled = !soundEnabled;
+      const icon = document.getElementById('sound-icon');
+      if (soundEnabled) {
+        icon.className = 'fa-solid fa-volume-high text-[#2dd4bf]';
+        playSound('add');
+        showToast('🔊', '효과음이 켜졌습니다');
+      } else {
+        icon.className = 'fa-solid fa-volume-xmark text-slate-500';
+        showToast('🔇', '효과음이 꺼졌습니다');
+      }
+    }
+
+    /*************************************************************
+     * WORKOUT TRACKER LOGIC
+     *************************************************************/
+    function addReps(amount) {
+      const dayData = getDayData(selectedDateKey);
+      const prevReps = dayData.reps;
+      dayData.reps += amount;
+
+      const now = new Date();
+      const timeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+      dayData.sets.push({
+        id: Date.now() + Math.random(),
+        count: amount,
+        time: timeStr
+      });
+
+      saveData();
+      animateCounter();
+
+      // Check if user just crossed 50 reps!
+      if (prevReps < GOAL_REPS && dayData.reps >= GOAL_REPS) {
+        playSound('goal');
+        launchConfetti();
+        showToast('🎖️', '축하합니다! 오늘 목표 50개를 완수했습니다!');
+      } else {
+        playSound('add');
+      }
+
+      renderAll();
+    }
+
+    function subtractOneRep() {
+      const dayData = getDayData(selectedDateKey);
+      if (dayData.reps <= 0) {
+        showToast('ℹ️', '현재 개수가 0개입니다');
+        return;
+      }
+
+      dayData.reps = Math.max(0, dayData.reps - 1);
+
+      // Adjust the last recorded set if present
+      if (dayData.sets.length > 0) {
+        const lastSet = dayData.sets[dayData.sets.length - 1];
+        if (lastSet.count > 1) {
+          lastSet.count -= 1;
+        } else {
+          dayData.sets.pop();
+        }
+      }
+
+      saveData();
+      playSound('sub');
+      animateCounter();
+      renderAll();
+    }
+
+    function removeSetById(setId) {
+      const dayData = getDayData(selectedDateKey);
+      const targetIndex = dayData.sets.findIndex(s => s.id === setId);
+      if (targetIndex !== -1) {
+        const removed = dayData.sets.splice(targetIndex, 1)[0];
+        dayData.reps = Math.max(0, dayData.reps - removed.count);
+        saveData();
+        playSound('sub');
+        animateCounter();
+        renderAll();
+        showToast('🗑️', `+${removed.count}개 세트 기록을 삭제했습니다`);
+      }
+    }
+
+    function animateCounter() {
+      const el = document.getElementById('current-reps-display');
+      el.classList.remove('animate-pop');
+      void el.offsetWidth; // trigger reflow
+      el.classList.add('animate-pop');
+    }
+
+    /*************************************************************
+     * DATE NAVIGATION
+     *************************************************************/
+    function changeDate(offsetDays) {
+      const [y, m, d] = selectedDateKey.split('-').map(Number);
+      const current = new Date(y, m - 1, d);
+      current.setDate(current.getDate() + offsetDays);
+      selectedDateKey = toDateKey(current);
+
+      // Sync calendar month with selected date
+      calendarYear = current.getFullYear();
+      calendarMonth = current.getMonth();
+
+      renderAll();
+    }
+
+    function goToToday() {
+      todayKey = toDateKey(new Date());
+      selectedDateKey = todayKey;
+      const now = new Date();
+      calendarYear = now.getFullYear();
+      calendarMonth = now.getMonth();
+      renderAll();
+      showToast('📅', '오늘 날짜로 이동했습니다');
+    }
+
+    function selectDateFromCalendar(dateKey) {
+      selectedDateKey = dateKey;
+      renderAll();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function changeCalendarMonth(offsetMonths) {
+      const d = new Date(calendarYear, calendarMonth + offsetMonths, 1);
+      calendarYear = d.getFullYear();
+      calendarMonth = d.getMonth();
+      renderCalendar();
+    }
+
+    function scrollToCalendar() {
+      document.getElementById('calendar-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    /*************************************************************
+     * STATISTICS CALCULATION
+     *************************************************************/
+    function calculateStats() {
+      let stickers = 0;
+      let totalReps = 0;
+
+      Object.keys(db.days).forEach(key => {
+        const r = db.days[key]?.reps || 0;
+        totalReps += r;
+        if (r >= GOAL_REPS) {
+          stickers += 1;
+        }
+      });
+
+      // Calculate consecutive days streak (up to today or yesterday)
+      let streak = 0;
+      const [ty, tm, td] = todayKey.split('-').map(Number);
+      let cursor = new Date(ty, tm - 1, td);
+
+      // If today isn't completed yet, check if yesterday was completed to keep active streak alive
+      const todayReps = db.days[todayKey]?.reps || 0;
+      if (todayReps < GOAL_REPS) {
+        cursor.setDate(cursor.getDate() - 1);
+      }
+
+      while (true) {
+        const key = toDateKey(cursor);
+        const r = db.days[key]?.reps || 0;
+        if (r >= GOAL_REPS) {
+          streak += 1;
+          cursor.setDate(cursor.getDate() - 1);
+        } else {
+          break;
+        }
+      }
+
+      return { stickers, streak, totalReps };
+    }
+
+    /*************************************************************
+     * UI RENDERING
+     *************************************************************/
+    function renderAll() {
+      todayKey = toDateKey(new Date());
+
+      // 1. Header Today Text
+      document.getElementById('header-today-text').textContent =
+        `오늘: ${formatDisplayDate(todayKey)} · 목표 ${GOAL_REPS}개`;
+
+      // 2. Summary Stats
+      const { stickers, streak, totalReps } = calculateStats();
+      document.getElementById('stat-stickers').textContent = stickers.toLocaleString();
+      document.getElementById('stat-streak').textContent = streak.toLocaleString();
+      document.getElementById('stat-total').textContent = totalReps.toLocaleString();
+
+      // 3. Date Navigator
+      const todayBadge = document.getElementById('today-badge');
+      if (selectedDateKey === todayKey) {
+        todayBadge.classList.remove('hidden');
+      } else {
+        todayBadge.classList.add('hidden');
+      }
+      document.getElementById('selected-date-text').textContent = formatDisplayDate(selectedDateKey);
+
+      // 4. Main Workout Card
+      const dayData = getDayData(selectedDateKey);
+      const reps = dayData.reps;
+
+      document.getElementById('current-reps-display').textContent = reps;
+
+      // Status Pill
+      const remaining = Math.max(0, GOAL_REPS - reps);
+      const statusPill = document.getElementById('goal-status-pill');
+      const statusDot = document.getElementById('goal-status-dot');
+      const statusText = document.getElementById('goal-status-text');
+
+      if (reps < GOAL_REPS) {
+        statusPill.className = 'inline-flex items-center gap-2 bg-[#1a253d] border border-[#28395c] rounded-full px-3.5 py-1.5';
+        statusDot.className = 'w-2.5 h-2.5 rounded-full bg-[#2dd4bf] inline-block';
+        statusText.innerHTML = `목표까지 <strong class="text-[#2dd4bf]">${remaining}</strong> 개 남음`;
+      } else {
+        const extra = reps - GOAL_REPS;
+        statusPill.className = 'inline-flex items-center gap-2 bg-[#113837] border border-[#14b8a6]/50 rounded-full px-3.5 py-1.5';
+        statusDot.className = 'w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping inline-block';
+        statusText.innerHTML = extra > 0
+          ? `🎖️ <strong class="text-[#2dd4bf]">50개 목표 달성!</strong> (+${extra}개 초과)`
+          : `🎖️ <strong class="text-[#2dd4bf]">오늘의 50개 목표 완수!</strong>`;
+      }
+
+      // Progress Bar (minimum 3% width so the glowing dot is visible at 0 matching screenshot)
+      const pct = Math.min(100, Math.round((reps / GOAL_REPS) * 100));
+      const visualWidth = reps === 0 ? 3.5 : Math.max(6, pct);
+      document.getElementById('progress-bar-fill').style.width = `${visualWidth}%`;
+
+      // Recent Sets Log
+      const setsContainer = document.getElementById('sets-log-container');
+      const setsCountLabel = document.getElementById('sets-count-label');
+      setsCountLabel.textContent = `총 ${dayData.sets.length}세트`;
+
+      if (dayData.sets.length === 0) {
+        setsContainer.innerHTML = `
+          <p class="text-xs text-slate-500 font-medium">
+            아직 기록된 세트가 없습니다. 위 버튼을 눌러보세요!
+          </p>
+        `;
+      } else {
+        setsContainer.innerHTML = dayData.sets.map((s, idx) => `
+          <button onclick="removeSetById(${s.id})" title="탭하여 이 세트 삭제" class="btn-press inline-flex items-center gap-1.5 bg-[#1b2740] hover:bg-[#28385c] border border-[#2d4068] rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-200">
+            <span class="text-slate-400">${idx + 1}세트</span>
+            <span class="text-[#2dd4bf]">+${s.count}개</span>
+            <span class="text-[10px] text-slate-500">${s.time}</span>
+            <i class="fa-solid fa-xmark text-[10px] text-slate-400 hover:text-rose-400 ml-0.5"></i>
+          </button>
+        `).join('');
+      }
+
+      // Memo
+      const memoEl = document.getElementById('daily-memo');
+      if (document.activeElement !== memoEl) {
+        memoEl.value = dayData.memo || '';
+      }
+
+      // 5. Render Monthly Sticker Calendar
+      renderCalendar();
+    }
+
+    function renderCalendar() {
+      const titleEl = document.getElementById('calendar-month-title');
+      titleEl.textContent = `${calendarYear}년 ${calendarMonth + 1}월`;
+
+      const firstDay = new Date(calendarYear, calendarMonth, 1).getDay();
+      const daysInMonth = new Date(calendarYear, calendarMonth + 1, 0).getDate();
+
+      const gridEl = document.getElementById('calendar-grid');
+      let html = '';
+      let monthlyStickers = 0;
+
+      // Empty cells before 1st of month
+      for (let i = 0; i < firstDay; i++) {
+        html += `<div class="h-11"></div>`;
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const mStr = String(calendarMonth + 1).padStart(2, '0');
+        const dStr = String(day).padStart(2, '0');
+        const dateKey = `${calendarYear}-${mStr}-${dStr}`;
+        const reps = db.days[dateKey]?.reps || 0;
+        const isCompleted = reps >= GOAL_REPS;
+        const isSelected = dateKey === selectedDateKey;
+        const isToday = dateKey === todayKey;
+
+        if (isCompleted) monthlyStickers++;
+
+        let boxStyle = 'bg-[#192339] border-[#233252] text-slate-300';
+        if (isCompleted) {
+          boxStyle = 'bg-[#113537] border-[#14b8a6]/60 text-white';
+        } else if (reps > 0) {
+          boxStyle = 'bg-[#1a2b46] border-[#2e4a78] text-teal-200';
+        }
+
+        if (isSelected) {
+          boxStyle += ' ring-2 ring-[#2dd4bf]';
+        }
+
+        html += `
+          <button onclick="selectDateFromCalendar('${dateKey}')" class="btn-press h-12 rounded-xl border ${boxStyle} flex flex-col items-center justify-center relative">
+            <span class="text-[11px] font-bold ${isToday ? 'text-[#2dd4bf] underline' : ''}">${day}</span>
+            <span class="text-xs leading-none mt-0.5">
+              ${isCompleted ? '🎖️' : (reps > 0 ? `<span class="text-[10px] font-extrabold text-[#2dd4bf]">${reps}</span>` : '<span class="text-[10px] text-slate-600">·</span>')}
+            </span>
+          </button>
+        `;
+      }
+
+      gridEl.innerHTML = html;
+      document.getElementById('month-summary-text').textContent = `이번 달 스티커 ${monthlyStickers}장`;
+    }
+
+    /*************************************************************
+     * MEMO AUTO-SAVE
+     *************************************************************/
+    let memoTimeout = null;
+    document.getElementById('daily-memo').addEventListener('input', (e) => {
+      const dayData = getDayData(selectedDateKey);
+      dayData.memo = e.target.value;
+      saveData();
+
+      const indicator = document.getElementById('memo-save-indicator');
+      indicator.style.opacity = '1';
+      clearTimeout(memoTimeout);
+      memoTimeout = setTimeout(() => {
+        indicator.style.opacity = '0';
+      }, 1400);
+    });
+
+    /*************************************************************
+     * MODALS, BACKUP & STANDALONE HTML DOWNLOAD
+     *************************************************************/
+    function openModal(id) {
+      const el = document.getElementById(id);
+      el.classList.remove('hidden');
+      el.classList.add('flex');
+    }
+
+    function closeModal(id) {
+      const el = document.getElementById(id);
+      el.classList.add('hidden');
+      el.classList.remove('flex');
+    }
+
+    function showToast(icon, text) {
+      const toast = document.getElementById('toast-msg');
+      document.getElementById('toast-icon').textContent = icon;
+      document.getElementById('toast-text').textContent = text;
+      toast.style.opacity = '1';
+      toast.style.transform = 'translate(-50%, -6px)';
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translate(-50%, 0)';
+      }, 2300);
+    }
+
+    function exportBackupData() {
+      const jsonStr = JSON.stringify(db);
+      const tempInput = document.createElement('textarea');
+      tempInput.value = jsonStr;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+
+      showToast('📋', '백업 코드가 클립보드에 복사되었습니다!');
+    }
+
+    function toggleImportArea() {
+      const box = document.getElementById('import-box');
+      box.classList.toggle('hidden');
+    }
+
+    function importBackupData() {
+      const raw = document.getElementById('import-json-input').value.trim();
+      if (!raw) {
+        showToast('⚠️', '백업 코드를 입력해주세요');
+        return;
+      }
+      try {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed.days === 'object') {
+          db = parsed;
+          saveData();
+          renderAll();
+          closeModal('backup-modal');
+          showToast('✅', '데이터가 성공적으로 복원되었습니다!');
+        } else {
+          showToast('❌', '올바른 백업 코드 형식이 아닙니다');
+        }
+      } catch (e) {
+        showToast('❌', 'JSON 코드 해석에 실패했습니다');
+      }
+    }
+
+    function resetSelectedDay() {
+      db.days[selectedDateKey] = { reps: 0, sets: [], memo: '' };
+      saveData();
+      renderAll();
+      closeModal('backup-modal');
+      showToast('🔄', '선택한 날짜의 기록을 0으로 초기화했습니다');
+    }
+
+    // Allows user to download a standalone .html file to open directly in iPhone Safari
+    function downloadStandaloneHTML() {
+      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = '턱걸이50챌린지.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('📲', '파일 다운로드 완료! Safari에서 열어 홈 화면에 추가하세요.');
+    }
+
+    /*************************************************************
+     * CONFETTI CELEBRATION EFFECT
+     *************************************************************/
+    function launchConfetti() {
+      const canvas = document.getElementById('confetti-canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const colors = ['#2dd4bf', '#10b981', '#fbbf24', '#f43f5e', '#38bdf8', '#a855f7'];
+      const particles = Array.from({ length: 75 }, () => ({
+        x: canvas.width / 2 + (Math.random() - 0.5) * 80,
+        y: canvas.height * 0.45,
+        vx: (Math.random() - 0.5) * 14,
+        vy: -Math.random() * 14 - 4,
+        size: Math.random() * 7 + 4,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        rotation: Math.random() * 360,
+        vr: (Math.random() - 0.5) * 12
+      }));
+
+      let frame = 0;
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let active = false;
+
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.38; // gravity
+          p.rotation += p.vr;
+
+          if (p.y < canvas.height + 20) active = true;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.65);
+          ctx.restore();
+        });
+
+        frame++;
+        if (active && frame < 150) {
+          requestAnimationFrame(animate);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      requestAnimationFrame(animate);
+    }
+
+    // Initialize App on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      loadData();
+      renderAll();
+    });
+  </script>
+
+</body></html>
